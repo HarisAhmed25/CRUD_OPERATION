@@ -1,0 +1,86 @@
+﻿@model CRUD_OPERATION.Models.Item
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CRUD_OPERATION</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/CRUD_OPERATION.styles.css-" asp-append-version="true" />
+    <style>
+        /* Custom CSS for Details View */
+        .details-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+            .details-container h1 {
+                margin-bottom: 20px;
+            }
+
+        .details-row {
+            margin-bottom: 10px;
+        }
+
+        .details-label {
+            font-weight: bold;
+        }
+
+        .details-buttons {
+            margin-top: 20px;
+        }
+
+            .details-buttons a {
+                margin-right: 10px;
+                padding: 8px 16px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: #fff;
+            }
+
+                .details-buttons a.edit-btn {
+                    background-color: #007bff; /* Blue for Edit button */
+                }
+
+                .details-buttons a.back-btn {
+                    background-color: #dc3545; /* Red for Back button */
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="details-container">
+            <h1>Details</h1>
+            <div class="details-row">
+                <span class="details-label">Name:</span>
+                @Html.DisplayFor(model => model.Name)
+            </div>
+            <div class="details-row">
+                <span class="details-label">Description:</span>
+                @Html.DisplayFor(model => model.Description)
+            </div>
+            <div class="details-row">
+                <span class="details-label">Category:</span>
+                @Html.DisplayFor(model => model.Category)
+            </div>
+            <div class="details-row">
+                <span class="details-label">Price:</span>
+                @Html.DisplayFor(model => model.Price)
+            </div>
+            <div class="details-buttons">
+                <a href="@Url.Action("Edit", new { id = Model?.Id })" class="edit-btn">Edit</a>
+                <a href="@Url.Action("Index")" class="back-btn">Back to List</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

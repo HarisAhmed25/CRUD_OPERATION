@@ -1,0 +1,94 @@
+﻿body {
+}
+/* CRUD_OPERATION.styles.css */
+
+/* Add border and color to navbar */
+.navbar {
+    border: 1px solid #ccc;
+    background-color: #f8f9fa; /* light gray */
+}
+
+/* Style navbar links */
+.navbar-nav .nav-link {
+    color: #343a40; /* dark gray */
+}
+
+/* Add border to main container */
+.container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* white */
+}
+
+/* Style footer */
+.footer {
+    border: 1px solid #ccc;
+    background-color: #f8f9fa; /* light gray */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Style buttons */
+.btn {
+    border: 1px solid #007bff; /* blue */
+    background-color: #007bff;
+    color: #fff; /* white */
+}
+
+    /* Hover effect for buttons */
+    .btn:hover {
+        background-color: #0056b3; /* darker blue */
+        border-color: #0056b3;
+    }
+
+/* Convert form into table */
+.form-table {
+    width: 100%;
+}
+
+    .form-table th,
+    .form-table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd; /* light gray */
+    }
+
+/* Style form input fields */
+.form-control {
+    border: 1px solid #ccc;
+}
+
+/* Style table buttons */
+.table-btn {
+    border: 1px solid #28a745; /* green */
+    background-color: #28a745;
+    color: #fff; /* white */
+}
+
+    /* Hover effect for table buttons */
+    .table-btn:hover {
+        background-color: #218838; /* darker green */
+        border-color: #218838;
+    }
+/* CRUD_OPERATION.styles.css */
+
+/* Style form inputs */
+.custom-input {
+    border: 1px solid #ced4da; /* light gray */
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Style form submit button */
+.custom-btn {
+    border: 1px solid #28a745; /* green */
+    background-color: #28a745;
+    color: #fff; /* white */
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+    /* Hover effect for button */
+    .custom-btn:hover {
+        background-color: #218838; /* darker green */
+        border-color: #218838;
+    }
